@@ -11,7 +11,6 @@ namespace BLL.BLLS
     public class BLL_Login
     {
         DAL.DALS.DAL_Login dal = new DAL.DALS.DAL_Login();
-        //this is github test
 
         public byte Login(string UserName, string Password)
         {
