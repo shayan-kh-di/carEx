@@ -17,7 +17,6 @@ namespace CarExhibition
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Forms.FormLogin());
-            //this is test
         }
     }
 }
