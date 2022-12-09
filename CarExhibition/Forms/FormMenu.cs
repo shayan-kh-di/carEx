@@ -41,5 +41,10 @@ namespace CarExhibition.Forms
                 Application.Exit();
             }
         }
+        private void guna2ButtonNewCarArrival_Click(object sender, EventArgs e)
+        {
+            FormCarArrival fc = new FormCarArrival();
+            fc.Show();
+        }
     }
 }

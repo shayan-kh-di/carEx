@@ -72,6 +72,9 @@
     <Compile Include="T_Login.cs">
       <DependentUpon>db.tt</DependentUpon>
     </Compile>
+    <Compile Include="T_NewCarArrival.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="db.edmx">

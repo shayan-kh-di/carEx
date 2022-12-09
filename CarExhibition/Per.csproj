@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FormCarArrival.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCarArrival.Designer.cs">
+      <DependentUpon>FormCarArrival.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormCarArrival.resx">
+      <DependentUpon>FormCarArrival.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +167,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

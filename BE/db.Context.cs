@@ -26,5 +26,6 @@ namespace BE
         }
     
         public virtual DbSet<T_Login> T_Login { get; set; }
+        public virtual DbSet<T_NewCarArrival> T_NewCarArrival { get; set; }
     }
 }
