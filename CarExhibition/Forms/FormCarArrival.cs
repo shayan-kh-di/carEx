@@ -24,6 +24,12 @@ namespace CarExhibition.Forms
         }
         BLL.BLLS.BLL_NewCarArrival BLL = new BLL.BLLS.BLL_NewCarArrival();
         T_NewCarArrival t = new T_NewCarArrival();
+        public void read()
+        {
+            FormMenu f = new FormMenu();
+            f.dataGridViewX1.DataSource = null;
+            f.dataGridViewX1.DataSource = BLL.ReadAll();
+        }
         private void guna2ButtonSaveTransction_Click(object sender, EventArgs e)
         {
             if (guna2TextBoxMachineCode.Text != null)
@@ -41,11 +47,11 @@ namespace CarExhibition.Forms
                 t.IdentificationCode = guna2TextBoxIdentification.Text;
                 if (radioButtonHasInsurance.Checked == true)
                 {
-                    t.Insurance = "Has it";
+                    t.Insurance = "دارد";
                 }
                 else
                 {
-                    t.Insurance = "Does not have it";
+                    t.Insurance = "ندارد";
                 }
                 t.MachineCode = guna2TextBoxMachineCode.Text;
                 t.MachineConDition = guna2TextBoxMachineCondition.Text;
@@ -55,11 +61,11 @@ namespace CarExhibition.Forms
                 t.User = guna2ComboBoxUser.Text;
                 if (radioButtonHasViolation.Checked == true)
                 {
-                    t.Violation = "Has it";
+                    t.Violation = "دارد";
                 }
                 else
                 {
-                    t.Violation = "Does not have it";
+                    t.Violation = "ندارد";
                 }
                 t.NumberOfCylinders = guna2NumericUpDownNumberOfCylinders.Value.ToString();
                 t.PaymentSteps = guna2NumericUpDownPaymentSteps.Value.ToString();
@@ -70,15 +76,22 @@ namespace CarExhibition.Forms
                 t.System = guna2ComboBoxSystem.Text;
                 if (radioButtonHasTLApproval.Checked == true)
                 {
-                    t.TLApproval = "Has it";
+                    t.TLApproval = "دارد";
                 }
                 else
                 {
-                    t.TLApproval = "Does not have it";
+                    t.TLApproval = "ندارد";
                 }
+                t.NumberOfAxes = guna2NumericUpDownNumberOfAxes.Value.ToString();
                 BLL.NewCarArrival(t);
-                MessageBox.Show("The vehicle was successfully registered", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                read();
+                MessageBox.Show("خودرو با موفقیت ثبت شد", "پیغام", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
             }
+        }
+        private void guna2ButtonCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

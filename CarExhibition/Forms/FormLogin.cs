@@ -52,7 +52,7 @@ namespace CarExhibition.Forms
                 }
                 else
                 {
-                    MessageBox.Show("The information entered is not correct!", "Security Message!", MessageBoxButtons.OK
+                    MessageBox.Show("اطلاعات وارد شده نادرست است","پیغام امنیتی", MessageBoxButtons.OK
                         , MessageBoxIcon.Error);
                 }
                 if (guna2CheckBoxRemember.Checked)//To remember Somebody
@@ -77,7 +77,7 @@ namespace CarExhibition.Forms
             }
             else
             {
-                MessageBox.Show("The information entered is not correct!", "Security Message!", MessageBoxButtons.OK
+                MessageBox.Show("اطلاعات وارد شده نادرست است", "پیغام امنیتی", MessageBoxButtons.OK
                     , MessageBoxIcon.Error);
             }
             if (guna2CheckBoxRemember.Checked)//To remember Somebody
@@ -116,18 +116,18 @@ namespace CarExhibition.Forms
                             lic.Year = kv.Expiration.Year;
                         }
                         km.SaveSuretyFile(string.Format(@"{0}\key.lic", Application.StartupPath), lic);
-                        MessageBox.Show("Software activation was done successfully", "Message", MessageBoxButtons
+                        MessageBox.Show("فعال سازی نرم افزا رانجام شد", "پیغام", MessageBoxButtons
                             .OK, MessageBoxIcon.Information);
                         guna2ShadowPanelAvtivation.Visible = false;
                         guna2ShadowPanelRegister.Visible = true;
                     }
                 }
                 else
-                    MessageBox.Show("The activation code is invalid", "Security Message!", MessageBoxButtons
+                    MessageBox.Show("کد فعال سازی نا معتبر", "پیغام امنیتی", MessageBoxButtons
                             .OK, MessageBoxIcon.Error);
             }
             else
-                MessageBox.Show("Confirm the information and try again", "Security Message!", MessageBoxButtons.OK
+                MessageBox.Show("اطلاعات را تایید و دوباره تلاش کنید", "پیغام امنیتی", MessageBoxButtons.OK
                        , MessageBoxIcon.Error);
         }
         private void guna2TextBoxNameAndFamilyRegister_KeyDown(object sender, KeyEventArgs e)//for register panel
@@ -181,13 +181,13 @@ namespace CarExhibition.Forms
                 Properties.Settings.Default.RememberNameSetting = guna2TextBoxNameAndFamilyRegister.Text;
                 Properties.Settings.Default.RememberEMSetting = guna2TextBoxEmailRegister.Text;
                 Properties.Settings.Default.Save();
-                MessageBox.Show("Account created successfully", "Message", MessageBoxButtons
+                MessageBox.Show("حساب کاربری ایجاد شد", "پیغام", MessageBoxButtons
                         .OK, MessageBoxIcon.Information);
                 linkLabelActivation.Visible = false;
                 guna2ShadowPanelRegister.Visible = false;
             }
             else
-                MessageBox.Show("The password is not valid", "Security Message!", MessageBoxButtons
+                MessageBox.Show("پسورد ها مطابقت ندارند", "پیغام امنیتی", MessageBoxButtons
                         .OK, MessageBoxIcon.Error);
         }
         private void guna2ButtonRegister_Click(object sender, EventArgs e)//for register somebody with button
@@ -206,13 +206,13 @@ namespace CarExhibition.Forms
                 Properties.Settings.Default.RememberNameSetting = guna2TextBoxNameAndFamilyRegister.Text;
                 Properties.Settings.Default.RememberEMSetting = guna2TextBoxEmailRegister.Text;
                 Properties.Settings.Default.Save();
-                MessageBox.Show("Account created successfully", "Message", MessageBoxButtons
+                MessageBox.Show("حساب کاربری ایجاد شد", "پیغام", MessageBoxButtons
                         .OK, MessageBoxIcon.Information);
                 linkLabelActivation.Visible = false;
                 guna2ShadowPanelRegister.Visible = false;
             }
             else
-                MessageBox.Show("The password is not valid", "Security Message!", MessageBoxButtons
+                MessageBox.Show("پسورد ها مطابقت ندارند", "پیغام امنیتی", MessageBoxButtons
                         .OK, MessageBoxIcon.Error);
         }
         private void guna2ButtonClose3_Click(object sender, EventArgs e)//for close register panel
@@ -238,7 +238,7 @@ namespace CarExhibition.Forms
                     {
                         if (Properties.Settings.Default.RememberPNSetting != string.Empty)
                         {
-                            if (MessageBox.Show("Your Password is (" + Properties.Settings.Default.RememberPDSetting + ")", "Security Message!",
+                            if (MessageBox.Show("پسورد شما (" + Properties.Settings.Default.RememberPDSetting + ")", "پیغام",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
                             {
                                 guna2TextBoxPhoneNumberRecovery.Clear();
@@ -248,11 +248,11 @@ namespace CarExhibition.Forms
                         }
                     }
                     else
-                        MessageBox.Show("The information entered is not correct", "Security Message!", MessageBoxButtons.OK
+                        MessageBox.Show("اطلاعات وارد شده صحیح نیست", "پیغام امنیتی", MessageBoxButtons.OK
                             , MessageBoxIcon.Error);
                 }
                 else
-                    MessageBox.Show("Confirm the information and try again", "Security Message!", MessageBoxButtons.OK
+                    MessageBox.Show("اطلاعات را تایید و دوباره تلاش کنید", "پیغام امنیتی", MessageBoxButtons.OK
                            , MessageBoxIcon.Error);
             }
         }
@@ -264,7 +264,7 @@ namespace CarExhibition.Forms
                 {
                     if (Properties.Settings.Default.RememberPNSetting != string.Empty)
                     {
-                        if (MessageBox.Show("Your Password is (" + Properties.Settings.Default.RememberPDSetting + ")", "Security Message!",
+                        if (MessageBox.Show("پسورد شما (" + Properties.Settings.Default.RememberPDSetting + ")", "پیغام امنیتی",
                             MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
                         {
                             guna2TextBoxPhoneNumberRecovery.Clear();
@@ -275,11 +275,11 @@ namespace CarExhibition.Forms
                     }
                 }
                 else
-                    MessageBox.Show("The information entered is not correct", "Security Message!", MessageBoxButtons.OK
+                    MessageBox.Show("اطلاعات وارد شده صحیح نیست", "پیغام امنیتی", MessageBoxButtons.OK
                         , MessageBoxIcon.Error);
             }
             else
-                MessageBox.Show("Confirm the information and try again", "Security Message!", MessageBoxButtons.OK
+                MessageBox.Show("اطلاعات را تایید و دوباره تلاش کنید", "پیغام امنیتی", MessageBoxButtons.OK
                        , MessageBoxIcon.Error);
         }
         private void guna2Button1_Click(object sender, EventArgs e)//for close panel recovery
@@ -319,7 +319,7 @@ namespace CarExhibition.Forms
         }
         private void guna2ButtonExit_Click(object sender, EventArgs e)//to exit of program
         {
-            if (MessageBox.Show("Do you want to exit the software?", "Message", MessageBoxButtons.YesNo
+            if (MessageBox.Show("آیا قصد خروج از نرم افزار را دارید", "پیغام", MessageBoxButtons.YesNo
           , MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Application.Exit();

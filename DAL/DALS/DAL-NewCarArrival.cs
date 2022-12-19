@@ -16,5 +16,9 @@ namespace DAL.DALS
             db.T_NewCarArrival.Add(t);
             db.SaveChanges();
         }
+        public List<T_NewCarArrival> ReadAll()
+        {
+            return (db.T_NewCarArrival).ToList();
+        }
     }
 }

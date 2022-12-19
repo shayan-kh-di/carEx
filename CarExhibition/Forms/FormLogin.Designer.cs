@@ -114,7 +114,8 @@
             this.guna2TextBoxPhoneNumberRecovery.Name = "guna2TextBoxPhoneNumberRecovery";
             this.guna2TextBoxPhoneNumberRecovery.PasswordChar = '\0';
             this.guna2TextBoxPhoneNumberRecovery.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBoxPhoneNumberRecovery.PlaceholderText = "Phone Number";
+            this.guna2TextBoxPhoneNumberRecovery.PlaceholderText = "شمراه موبایل";
+            this.guna2TextBoxPhoneNumberRecovery.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBoxPhoneNumberRecovery.SelectedText = "";
             this.guna2TextBoxPhoneNumberRecovery.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxPhoneNumberRecovery.TabIndex = 8;
@@ -132,7 +133,7 @@
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(122, 38);
             this.guna2Button1.TabIndex = 7;
-            this.guna2Button1.Text = "Close";
+            this.guna2Button1.Text = "بستن";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2ButtonRecovery
@@ -147,7 +148,7 @@
             this.guna2ButtonRecovery.Name = "guna2ButtonRecovery";
             this.guna2ButtonRecovery.Size = new System.Drawing.Size(122, 38);
             this.guna2ButtonRecovery.TabIndex = 4;
-            this.guna2ButtonRecovery.Text = "recovery";
+            this.guna2ButtonRecovery.Text = "بازیابی";
             this.guna2ButtonRecovery.Click += new System.EventHandler(this.guna2ButtonRecovery_Click);
             // 
             // button4
@@ -167,13 +168,14 @@
             this.guna2CheckBoxConfirmRecovery.CheckedState.BorderThickness = 0;
             this.guna2CheckBoxConfirmRecovery.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CheckBoxConfirmRecovery.CheckMarkColor = System.Drawing.Color.Indigo;
-            this.guna2CheckBoxConfirmRecovery.Font = new System.Drawing.Font("IRANSansWeb", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBoxConfirmRecovery.Font = new System.Drawing.Font("IRANSansWeb", 8.249999F, System.Drawing.FontStyle.Bold);
             this.guna2CheckBoxConfirmRecovery.ForeColor = System.Drawing.Color.White;
-            this.guna2CheckBoxConfirmRecovery.Location = new System.Drawing.Point(55, 228);
+            this.guna2CheckBoxConfirmRecovery.Location = new System.Drawing.Point(203, 228);
             this.guna2CheckBoxConfirmRecovery.Name = "guna2CheckBoxConfirmRecovery";
-            this.guna2CheckBoxConfirmRecovery.Size = new System.Drawing.Size(135, 22);
+            this.guna2CheckBoxConfirmRecovery.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.guna2CheckBoxConfirmRecovery.Size = new System.Drawing.Size(87, 22);
             this.guna2CheckBoxConfirmRecovery.TabIndex = 3;
-            this.guna2CheckBoxConfirmRecovery.Text = "Confirm Infromation";
+            this.guna2CheckBoxConfirmRecovery.Text = "تایید اطلاعات";
             this.guna2CheckBoxConfirmRecovery.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2CheckBoxConfirmRecovery.UncheckedState.BorderRadius = 0;
             this.guna2CheckBoxConfirmRecovery.UncheckedState.BorderThickness = 0;
@@ -184,11 +186,11 @@
             this.labelTitle4.AutoSize = true;
             this.labelTitle4.Font = new System.Drawing.Font("IRANSansWeb", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle4.ForeColor = System.Drawing.Color.White;
-            this.labelTitle4.Location = new System.Drawing.Point(69, 46);
+            this.labelTitle4.Location = new System.Drawing.Point(109, 46);
             this.labelTitle4.Name = "labelTitle4";
-            this.labelTitle4.Size = new System.Drawing.Size(209, 35);
+            this.labelTitle4.Size = new System.Drawing.Size(135, 35);
             this.labelTitle4.TabIndex = 4;
-            this.labelTitle4.Text = "Password recovery";
+            this.labelTitle4.Text = "بازیبایی پسورد";
             // 
             // guna2TextBoxEmailRicovery
             // 
@@ -211,7 +213,8 @@
             this.guna2TextBoxEmailRicovery.Name = "guna2TextBoxEmailRicovery";
             this.guna2TextBoxEmailRicovery.PasswordChar = '\0';
             this.guna2TextBoxEmailRicovery.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBoxEmailRicovery.PlaceholderText = "Email";
+            this.guna2TextBoxEmailRicovery.PlaceholderText = "ایمیل";
+            this.guna2TextBoxEmailRicovery.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBoxEmailRicovery.SelectedText = "";
             this.guna2TextBoxEmailRicovery.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxEmailRicovery.TabIndex = 2;
@@ -261,7 +264,8 @@
             this.guna2TextBoxUserNameRegister.Name = "guna2TextBoxUserNameRegister";
             this.guna2TextBoxUserNameRegister.PasswordChar = '\0';
             this.guna2TextBoxUserNameRegister.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBoxUserNameRegister.PlaceholderText = "UserName";
+            this.guna2TextBoxUserNameRegister.PlaceholderText = "نام کاربری";
+            this.guna2TextBoxUserNameRegister.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBoxUserNameRegister.SelectedText = "";
             this.guna2TextBoxUserNameRegister.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxUserNameRegister.TabIndex = 9;
@@ -288,7 +292,8 @@
             this.guna2TextBoxEmailRegister.Name = "guna2TextBoxEmailRegister";
             this.guna2TextBoxEmailRegister.PasswordChar = '\0';
             this.guna2TextBoxEmailRegister.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBoxEmailRegister.PlaceholderText = "Email";
+            this.guna2TextBoxEmailRegister.PlaceholderText = "ایمیل";
+            this.guna2TextBoxEmailRegister.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBoxEmailRegister.SelectedText = "";
             this.guna2TextBoxEmailRegister.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxEmailRegister.TabIndex = 8;
@@ -315,7 +320,8 @@
             this.guna2TextBoxNameAndFamilyRegister.Name = "guna2TextBoxNameAndFamilyRegister";
             this.guna2TextBoxNameAndFamilyRegister.PasswordChar = '\0';
             this.guna2TextBoxNameAndFamilyRegister.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBoxNameAndFamilyRegister.PlaceholderText = "Name And Family";
+            this.guna2TextBoxNameAndFamilyRegister.PlaceholderText = "نام و نام خانوادگی";
+            this.guna2TextBoxNameAndFamilyRegister.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBoxNameAndFamilyRegister.SelectedText = "";
             this.guna2TextBoxNameAndFamilyRegister.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxNameAndFamilyRegister.TabIndex = 7;
@@ -333,7 +339,7 @@
             this.guna2ButtonClose3.Name = "guna2ButtonClose3";
             this.guna2ButtonClose3.Size = new System.Drawing.Size(122, 38);
             this.guna2ButtonClose3.TabIndex = 6;
-            this.guna2ButtonClose3.Text = "Close";
+            this.guna2ButtonClose3.Text = "بستن";
             this.guna2ButtonClose3.Click += new System.EventHandler(this.guna2ButtonClose3_Click);
             // 
             // guna2ButtonRegister
@@ -348,7 +354,7 @@
             this.guna2ButtonRegister.Name = "guna2ButtonRegister";
             this.guna2ButtonRegister.Size = new System.Drawing.Size(122, 38);
             this.guna2ButtonRegister.TabIndex = 4;
-            this.guna2ButtonRegister.Text = "Register";
+            this.guna2ButtonRegister.Text = "ایجاد حساب";
             this.guna2ButtonRegister.Click += new System.EventHandler(this.guna2ButtonRegister_Click);
             // 
             // button2
@@ -365,11 +371,11 @@
             this.labelTitelRegister.AutoSize = true;
             this.labelTitelRegister.Font = new System.Drawing.Font("IRANSansWeb", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitelRegister.ForeColor = System.Drawing.Color.White;
-            this.labelTitelRegister.Location = new System.Drawing.Point(122, 36);
+            this.labelTitelRegister.Location = new System.Drawing.Point(120, 36);
             this.labelTitelRegister.Name = "labelTitelRegister";
-            this.labelTitelRegister.Size = new System.Drawing.Size(100, 35);
+            this.labelTitelRegister.Size = new System.Drawing.Size(111, 35);
             this.labelTitelRegister.TabIndex = 4;
-            this.labelTitelRegister.Text = "Register";
+            this.labelTitelRegister.Text = "ثبت حساب";
             // 
             // guna2TextBoxRepeatpasswordRegister
             // 
@@ -392,7 +398,8 @@
             this.guna2TextBoxRepeatpasswordRegister.Name = "guna2TextBoxRepeatpasswordRegister";
             this.guna2TextBoxRepeatpasswordRegister.PasswordChar = '\0';
             this.guna2TextBoxRepeatpasswordRegister.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBoxRepeatpasswordRegister.PlaceholderText = "Repeat password";
+            this.guna2TextBoxRepeatpasswordRegister.PlaceholderText = "تکرار پسورد";
+            this.guna2TextBoxRepeatpasswordRegister.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBoxRepeatpasswordRegister.SelectedText = "";
             this.guna2TextBoxRepeatpasswordRegister.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxRepeatpasswordRegister.TabIndex = 2;
@@ -419,7 +426,8 @@
             this.guna2TextBoxPasswordRegister.Name = "guna2TextBoxPasswordRegister";
             this.guna2TextBoxPasswordRegister.PasswordChar = '\0';
             this.guna2TextBoxPasswordRegister.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBoxPasswordRegister.PlaceholderText = "Password";
+            this.guna2TextBoxPasswordRegister.PlaceholderText = "پسورد";
+            this.guna2TextBoxPasswordRegister.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBoxPasswordRegister.SelectedText = "";
             this.guna2TextBoxPasswordRegister.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxPasswordRegister.TabIndex = 2;
@@ -446,7 +454,8 @@
             this.guna2TextBoxPhoneNumberRegister.Name = "guna2TextBoxPhoneNumberRegister";
             this.guna2TextBoxPhoneNumberRegister.PasswordChar = '\0';
             this.guna2TextBoxPhoneNumberRegister.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBoxPhoneNumberRegister.PlaceholderText = "Phone Number";
+            this.guna2TextBoxPhoneNumberRegister.PlaceholderText = "شماره موبایل";
+            this.guna2TextBoxPhoneNumberRegister.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBoxPhoneNumberRegister.SelectedText = "";
             this.guna2TextBoxPhoneNumberRegister.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxPhoneNumberRegister.TabIndex = 2;
@@ -485,7 +494,7 @@
             this.guna2ButtonAvtiveation.Name = "guna2ButtonAvtiveation";
             this.guna2ButtonAvtiveation.Size = new System.Drawing.Size(122, 38);
             this.guna2ButtonAvtiveation.TabIndex = 8;
-            this.guna2ButtonAvtiveation.Text = "Activation";
+            this.guna2ButtonAvtiveation.Text = "فعال سازی";
             this.guna2ButtonAvtiveation.Click += new System.EventHandler(this.guna2ButtonAvtiveation_Click);
             // 
             // linkLabelRequest
@@ -494,12 +503,12 @@
             this.linkLabelRequest.Font = new System.Drawing.Font("IRANSansWeb", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelRequest.ForeColor = System.Drawing.Color.White;
             this.linkLabelRequest.LinkColor = System.Drawing.Color.Aqua;
-            this.linkLabelRequest.Location = new System.Drawing.Point(181, 230);
+            this.linkLabelRequest.Location = new System.Drawing.Point(56, 229);
             this.linkLabelRequest.Name = "linkLabelRequest";
-            this.linkLabelRequest.Size = new System.Drawing.Size(119, 18);
+            this.linkLabelRequest.Size = new System.Drawing.Size(98, 18);
             this.linkLabelRequest.TabIndex = 7;
             this.linkLabelRequest.TabStop = true;
-            this.linkLabelRequest.Text = "Request Device code";
+            this.linkLabelRequest.Text = "درخواست کد دستگاه";
             this.linkLabelRequest.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelRequest_LinkClicked);
             // 
             // guna2ButtonClose
@@ -514,7 +523,7 @@
             this.guna2ButtonClose.Name = "guna2ButtonClose";
             this.guna2ButtonClose.Size = new System.Drawing.Size(122, 38);
             this.guna2ButtonClose.TabIndex = 6;
-            this.guna2ButtonClose.Text = "Close";
+            this.guna2ButtonClose.Text = "بستن";
             this.guna2ButtonClose.Click += new System.EventHandler(this.guna2ButtonClose_Click);
             // 
             // button3
@@ -536,11 +545,12 @@
             this.guna2CheckBoxConfirmCode.CheckMarkColor = System.Drawing.Color.Indigo;
             this.guna2CheckBoxConfirmCode.Font = new System.Drawing.Font("IRANSansWeb", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBoxConfirmCode.ForeColor = System.Drawing.Color.White;
-            this.guna2CheckBoxConfirmCode.Location = new System.Drawing.Point(55, 228);
+            this.guna2CheckBoxConfirmCode.Location = new System.Drawing.Point(200, 228);
             this.guna2CheckBoxConfirmCode.Name = "guna2CheckBoxConfirmCode";
-            this.guna2CheckBoxConfirmCode.Size = new System.Drawing.Size(99, 22);
+            this.guna2CheckBoxConfirmCode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.guna2CheckBoxConfirmCode.Size = new System.Drawing.Size(87, 22);
             this.guna2CheckBoxConfirmCode.TabIndex = 3;
-            this.guna2CheckBoxConfirmCode.Text = "Confirm code";
+            this.guna2CheckBoxConfirmCode.Text = "تایید اطلاعات";
             this.guna2CheckBoxConfirmCode.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2CheckBoxConfirmCode.UncheckedState.BorderRadius = 0;
             this.guna2CheckBoxConfirmCode.UncheckedState.BorderThickness = 0;
@@ -551,11 +561,11 @@
             this.labelTitileAvtivation.AutoSize = true;
             this.labelTitileAvtivation.Font = new System.Drawing.Font("IRANSansWeb", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitileAvtivation.ForeColor = System.Drawing.Color.White;
-            this.labelTitileAvtivation.Location = new System.Drawing.Point(115, 46);
+            this.labelTitileAvtivation.Location = new System.Drawing.Point(119, 46);
             this.labelTitileAvtivation.Name = "labelTitileAvtivation";
-            this.labelTitileAvtivation.Size = new System.Drawing.Size(119, 35);
+            this.labelTitileAvtivation.Size = new System.Drawing.Size(104, 35);
             this.labelTitileAvtivation.TabIndex = 4;
-            this.labelTitileAvtivation.Text = "Activation";
+            this.labelTitileAvtivation.Text = "فعال سازی";
             // 
             // guna2TextBoxActivationcode
             // 
@@ -577,7 +587,8 @@
             this.guna2TextBoxActivationcode.Name = "guna2TextBoxActivationcode";
             this.guna2TextBoxActivationcode.PasswordChar = '\0';
             this.guna2TextBoxActivationcode.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBoxActivationcode.PlaceholderText = "Activation code";
+            this.guna2TextBoxActivationcode.PlaceholderText = "کد فعال ساز";
+            this.guna2TextBoxActivationcode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBoxActivationcode.SelectedText = "";
             this.guna2TextBoxActivationcode.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxActivationcode.TabIndex = 2;
@@ -602,8 +613,9 @@
             this.guna2TextBoxDevicecode.Name = "guna2TextBoxDevicecode";
             this.guna2TextBoxDevicecode.PasswordChar = '\0';
             this.guna2TextBoxDevicecode.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBoxDevicecode.PlaceholderText = "Device code";
+            this.guna2TextBoxDevicecode.PlaceholderText = "کد دستگاه";
             this.guna2TextBoxDevicecode.ReadOnly = true;
+            this.guna2TextBoxDevicecode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBoxDevicecode.SelectedText = "";
             this.guna2TextBoxDevicecode.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxDevicecode.TabIndex = 1;
@@ -637,7 +649,7 @@
             // 
             this.labelXShowAndHide.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelXShowAndHide.ForeColor = System.Drawing.Color.Black;
-            this.labelXShowAndHide.Location = new System.Drawing.Point(268, 172);
+            this.labelXShowAndHide.Location = new System.Drawing.Point(58, 171);
             this.labelXShowAndHide.Name = "labelXShowAndHide";
             this.labelXShowAndHide.Size = new System.Drawing.Size(27, 23);
             this.labelXShowAndHide.Symbol = "59636";
@@ -659,7 +671,7 @@
             this.guna2ButtonLogin.Name = "guna2ButtonLogin";
             this.guna2ButtonLogin.Size = new System.Drawing.Size(122, 38);
             this.guna2ButtonLogin.TabIndex = 4;
-            this.guna2ButtonLogin.Text = "Login";
+            this.guna2ButtonLogin.Text = "ورود";
             this.guna2ButtonLogin.Click += new System.EventHandler(this.guna2ButtonLogin_Click);
             // 
             // button1
@@ -681,11 +693,12 @@
             this.guna2CheckBoxRemember.CheckMarkColor = System.Drawing.Color.Indigo;
             this.guna2CheckBoxRemember.Font = new System.Drawing.Font("IRANSansWeb", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CheckBoxRemember.ForeColor = System.Drawing.Color.White;
-            this.guna2CheckBoxRemember.Location = new System.Drawing.Point(55, 228);
+            this.guna2CheckBoxRemember.Location = new System.Drawing.Point(200, 228);
             this.guna2CheckBoxRemember.Name = "guna2CheckBoxRemember";
-            this.guna2CheckBoxRemember.Size = new System.Drawing.Size(103, 22);
+            this.guna2CheckBoxRemember.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.guna2CheckBoxRemember.Size = new System.Drawing.Size(92, 22);
             this.guna2CheckBoxRemember.TabIndex = 3;
-            this.guna2CheckBoxRemember.Text = "Remember me";
+            this.guna2CheckBoxRemember.Text = "مرا بخاطر بسپار";
             this.guna2CheckBoxRemember.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2CheckBoxRemember.UncheckedState.BorderRadius = 0;
             this.guna2CheckBoxRemember.UncheckedState.BorderThickness = 0;
@@ -696,11 +709,11 @@
             this.labelTitileLogin.AutoSize = true;
             this.labelTitileLogin.Font = new System.Drawing.Font("IRANSansWeb", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitileLogin.ForeColor = System.Drawing.Color.White;
-            this.labelTitileLogin.Location = new System.Drawing.Point(138, 46);
+            this.labelTitileLogin.Location = new System.Drawing.Point(119, 46);
             this.labelTitileLogin.Name = "labelTitileLogin";
-            this.labelTitileLogin.Size = new System.Drawing.Size(72, 35);
+            this.labelTitileLogin.Size = new System.Drawing.Size(109, 35);
             this.labelTitileLogin.TabIndex = 4;
-            this.labelTitileLogin.Text = "Login";
+            this.labelTitileLogin.Text = "صفحه ورود";
             // 
             // guna2ButtonExit
             // 
@@ -714,7 +727,7 @@
             this.guna2ButtonExit.Name = "guna2ButtonExit";
             this.guna2ButtonExit.Size = new System.Drawing.Size(122, 38);
             this.guna2ButtonExit.TabIndex = 5;
-            this.guna2ButtonExit.Text = "Exit";
+            this.guna2ButtonExit.Text = "خروج";
             this.guna2ButtonExit.Click += new System.EventHandler(this.guna2ButtonExit_Click);
             // 
             // linkLabelForgotPassword
@@ -723,12 +736,12 @@
             this.linkLabelForgotPassword.Font = new System.Drawing.Font("IRANSansWeb", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelForgotPassword.ForeColor = System.Drawing.Color.White;
             this.linkLabelForgotPassword.LinkColor = System.Drawing.Color.Aqua;
-            this.linkLabelForgotPassword.Location = new System.Drawing.Point(194, 230);
+            this.linkLabelForgotPassword.Location = new System.Drawing.Point(56, 229);
             this.linkLabelForgotPassword.Name = "linkLabelForgotPassword";
-            this.linkLabelForgotPassword.Size = new System.Drawing.Size(105, 18);
+            this.linkLabelForgotPassword.Size = new System.Drawing.Size(79, 18);
             this.linkLabelForgotPassword.TabIndex = 1;
             this.linkLabelForgotPassword.TabStop = true;
-            this.linkLabelForgotPassword.Text = "Forgot Password?";
+            this.linkLabelForgotPassword.Text = "فراموشی رمز عبور";
             this.linkLabelForgotPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelForgotPassword_LinkClicked);
             // 
             // guna2TextBoxPasswordLogin
@@ -752,7 +765,8 @@
             this.guna2TextBoxPasswordLogin.Name = "guna2TextBoxPasswordLogin";
             this.guna2TextBoxPasswordLogin.PasswordChar = '•';
             this.guna2TextBoxPasswordLogin.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBoxPasswordLogin.PlaceholderText = "Password";
+            this.guna2TextBoxPasswordLogin.PlaceholderText = "پسورد";
+            this.guna2TextBoxPasswordLogin.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBoxPasswordLogin.SelectedText = "";
             this.guna2TextBoxPasswordLogin.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxPasswordLogin.TabIndex = 2;
@@ -779,7 +793,8 @@
             this.guna2TextBoxUserNameLogin.Name = "guna2TextBoxUserNameLogin";
             this.guna2TextBoxUserNameLogin.PasswordChar = '\0';
             this.guna2TextBoxUserNameLogin.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBoxUserNameLogin.PlaceholderText = "UserName";
+            this.guna2TextBoxUserNameLogin.PlaceholderText = "نام کاربری";
+            this.guna2TextBoxUserNameLogin.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBoxUserNameLogin.SelectedText = "";
             this.guna2TextBoxUserNameLogin.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxUserNameLogin.TabIndex = 1;
@@ -790,12 +805,12 @@
             this.linkLabelActivation.AutoSize = true;
             this.linkLabelActivation.Font = new System.Drawing.Font("IRANSansWeb", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelActivation.LinkColor = System.Drawing.Color.White;
-            this.linkLabelActivation.Location = new System.Drawing.Point(339, 455);
+            this.linkLabelActivation.Location = new System.Drawing.Point(342, 455);
             this.linkLabelActivation.Name = "linkLabelActivation";
-            this.linkLabelActivation.Size = new System.Drawing.Size(67, 20);
+            this.linkLabelActivation.Size = new System.Drawing.Size(60, 20);
             this.linkLabelActivation.TabIndex = 6;
             this.linkLabelActivation.TabStop = true;
-            this.linkLabelActivation.Text = "Activation";
+            this.linkLabelActivation.Text = "فعال سازی";
             this.linkLabelActivation.Visible = false;
             this.linkLabelActivation.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelActivation_LinkClicked_1);
             // 
