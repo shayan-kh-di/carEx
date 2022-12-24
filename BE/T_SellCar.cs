@@ -12,11 +12,11 @@ namespace BE
     using System;
     using System.Collections.Generic;
     
-    public partial class T_NewCarArrival
+    public partial class T_SellCar
     {
-        public int Id { get; set; }
-        public string MachineCode { get; set; }
-        public string Type { get; set; }
+        public int id { get; set; }
+        public string moshincode { get; set; }
+        public string Type1 { get; set; }
         public string System { get; set; }
         public string User { get; set; }
         public string Style { get; set; }
@@ -37,14 +37,18 @@ namespace BE
         public string Violation { get; set; }
         public string TLApproval { get; set; }
         public string madarek { get; set; }
+        public string pprice { get; set; }
+        public string ppricematn { get; set; }
+        public string EmailOwner { get; set; }
         public string CarOwner { get; set; }
         public string IdentificationCode { get; set; }
         public string FixedNumber { get; set; }
-        public string EmailOwner { get; set; }
+        public string sellname { get; set; }
+        public string sellemail { get; set; }
+        public string sellmobile { get; set; }
+        public string sellcodemeli { get; set; }
         public string Price { get; set; }
-        public string pricemetn { get; set; }
-        public string PaymentType { get; set; }
-        public string PaymentSteps { get; set; }
+        public string pricematn { get; set; }
         public string TransactionDate { get; set; }
     }
 }

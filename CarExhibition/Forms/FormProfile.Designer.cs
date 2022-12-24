@@ -50,9 +50,9 @@
             // 
             this.pictureBoxExit.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxExit.Image = global::CarExhibition.Properties.Resources._2;
-            this.pictureBoxExit.Location = new System.Drawing.Point(300, -4);
+            this.pictureBoxExit.Location = new System.Drawing.Point(304, 5);
             this.pictureBoxExit.Name = "pictureBoxExit";
-            this.pictureBoxExit.Size = new System.Drawing.Size(20, 27);
+            this.pictureBoxExit.Size = new System.Drawing.Size(20, 22);
             this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxExit.TabIndex = 5;
             this.pictureBoxExit.TabStop = false;
@@ -61,6 +61,7 @@
             // guna2ShadowPanelPasswordrecovery
             // 
             this.guna2ShadowPanelPasswordrecovery.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanelPasswordrecovery.Controls.Add(this.pictureBoxExit);
             this.guna2ShadowPanelPasswordrecovery.Controls.Add(this.labelPasswordTitle);
             this.guna2ShadowPanelPasswordrecovery.Controls.Add(this.labelUserNameTitle);
             this.guna2ShadowPanelPasswordrecovery.Controls.Add(this.labelEmailTitle);
@@ -73,12 +74,12 @@
             this.guna2ShadowPanelPasswordrecovery.Controls.Add(this.labelNameTitle);
             this.guna2ShadowPanelPasswordrecovery.Controls.Add(this.pictureBoxProfile);
             this.guna2ShadowPanelPasswordrecovery.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.guna2ShadowPanelPasswordrecovery.Location = new System.Drawing.Point(0, -5);
+            this.guna2ShadowPanelPasswordrecovery.Location = new System.Drawing.Point(0, 1);
             this.guna2ShadowPanelPasswordrecovery.Name = "guna2ShadowPanelPasswordrecovery";
             this.guna2ShadowPanelPasswordrecovery.Radius = 10;
             this.guna2ShadowPanelPasswordrecovery.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanelPasswordrecovery.ShadowShift = 20;
-            this.guna2ShadowPanelPasswordrecovery.Size = new System.Drawing.Size(324, 343);
+            this.guna2ShadowPanelPasswordrecovery.Size = new System.Drawing.Size(328, 348);
             this.guna2ShadowPanelPasswordrecovery.TabIndex = 5;
             // 
             // labelPasswordTitle
@@ -86,7 +87,7 @@
             this.labelPasswordTitle.AutoSize = true;
             this.labelPasswordTitle.Font = new System.Drawing.Font("IRANSansWeb", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPasswordTitle.ForeColor = System.Drawing.Color.Cyan;
-            this.labelPasswordTitle.Location = new System.Drawing.Point(255, 288);
+            this.labelPasswordTitle.Location = new System.Drawing.Point(258, 289);
             this.labelPasswordTitle.Name = "labelPasswordTitle";
             this.labelPasswordTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelPasswordTitle.Size = new System.Drawing.Size(42, 20);
@@ -98,7 +99,7 @@
             this.labelUserNameTitle.AutoSize = true;
             this.labelUserNameTitle.Font = new System.Drawing.Font("IRANSansWeb", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUserNameTitle.ForeColor = System.Drawing.Color.Cyan;
-            this.labelUserNameTitle.Location = new System.Drawing.Point(238, 258);
+            this.labelUserNameTitle.Location = new System.Drawing.Point(241, 258);
             this.labelUserNameTitle.Name = "labelUserNameTitle";
             this.labelUserNameTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelUserNameTitle.Size = new System.Drawing.Size(59, 20);
@@ -110,7 +111,7 @@
             this.labelEmailTitle.AutoSize = true;
             this.labelEmailTitle.Font = new System.Drawing.Font("IRANSansWeb", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmailTitle.ForeColor = System.Drawing.Color.Cyan;
-            this.labelEmailTitle.Location = new System.Drawing.Point(259, 226);
+            this.labelEmailTitle.Location = new System.Drawing.Point(262, 226);
             this.labelEmailTitle.Name = "labelEmailTitle";
             this.labelEmailTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelEmailTitle.Size = new System.Drawing.Size(38, 20);
@@ -122,7 +123,7 @@
             this.labelPhoneNumberTitle.AutoSize = true;
             this.labelPhoneNumberTitle.Font = new System.Drawing.Font("IRANSansWeb", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPhoneNumberTitle.ForeColor = System.Drawing.Color.Cyan;
-            this.labelPhoneNumberTitle.Location = new System.Drawing.Point(224, 195);
+            this.labelPhoneNumberTitle.Location = new System.Drawing.Point(227, 196);
             this.labelPhoneNumberTitle.Name = "labelPhoneNumberTitle";
             this.labelPhoneNumberTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelPhoneNumberTitle.Size = new System.Drawing.Size(73, 20);
@@ -132,55 +133,55 @@
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.Font = new System.Drawing.Font("IRANSansWeb", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPassword.ForeColor = System.Drawing.Color.White;
-            this.labelPassword.Location = new System.Drawing.Point(38, 290);
+            this.labelPassword.Location = new System.Drawing.Point(38, 289);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(113, 15);
+            this.labelPassword.Size = new System.Drawing.Size(107, 20);
             this.labelPassword.TabIndex = 9;
             this.labelPassword.Text = "NameAndFamily:";
             // 
             // labelUserName
             // 
             this.labelUserName.AutoSize = true;
-            this.labelUserName.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserName.Font = new System.Drawing.Font("IRANSansWeb", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUserName.ForeColor = System.Drawing.Color.White;
-            this.labelUserName.Location = new System.Drawing.Point(38, 260);
+            this.labelUserName.Location = new System.Drawing.Point(38, 258);
             this.labelUserName.Name = "labelUserName";
-            this.labelUserName.Size = new System.Drawing.Size(113, 15);
+            this.labelUserName.Size = new System.Drawing.Size(107, 20);
             this.labelUserName.TabIndex = 10;
             this.labelUserName.Text = "NameAndFamily:";
             // 
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
-            this.labelEmail.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmail.Font = new System.Drawing.Font("IRANSansWeb", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmail.ForeColor = System.Drawing.Color.White;
-            this.labelEmail.Location = new System.Drawing.Point(38, 228);
+            this.labelEmail.Location = new System.Drawing.Point(38, 226);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(113, 15);
+            this.labelEmail.Size = new System.Drawing.Size(107, 20);
             this.labelEmail.TabIndex = 11;
             this.labelEmail.Text = "NameAndFamily:";
             // 
             // labelPhoneNumber
             // 
             this.labelPhoneNumber.AutoSize = true;
-            this.labelPhoneNumber.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPhoneNumber.Font = new System.Drawing.Font("IRANSansWeb", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPhoneNumber.ForeColor = System.Drawing.Color.White;
-            this.labelPhoneNumber.Location = new System.Drawing.Point(38, 197);
+            this.labelPhoneNumber.Location = new System.Drawing.Point(38, 196);
             this.labelPhoneNumber.Name = "labelPhoneNumber";
-            this.labelPhoneNumber.Size = new System.Drawing.Size(113, 15);
+            this.labelPhoneNumber.Size = new System.Drawing.Size(107, 20);
             this.labelPhoneNumber.TabIndex = 12;
             this.labelPhoneNumber.Text = "NameAndFamily:";
             // 
             // labelNameAndFamily
             // 
             this.labelNameAndFamily.AutoSize = true;
-            this.labelNameAndFamily.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameAndFamily.Font = new System.Drawing.Font("IRANSansWeb", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNameAndFamily.ForeColor = System.Drawing.Color.White;
-            this.labelNameAndFamily.Location = new System.Drawing.Point(38, 164);
+            this.labelNameAndFamily.Location = new System.Drawing.Point(38, 165);
             this.labelNameAndFamily.Name = "labelNameAndFamily";
-            this.labelNameAndFamily.Size = new System.Drawing.Size(113, 15);
+            this.labelNameAndFamily.Size = new System.Drawing.Size(107, 20);
             this.labelNameAndFamily.TabIndex = 13;
             this.labelNameAndFamily.Text = "NameAndFamily:";
             // 
@@ -189,7 +190,7 @@
             this.labelNameTitle.AutoSize = true;
             this.labelNameTitle.Font = new System.Drawing.Font("IRANSansWeb", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNameTitle.ForeColor = System.Drawing.Color.Cyan;
-            this.labelNameTitle.Location = new System.Drawing.Point(200, 162);
+            this.labelNameTitle.Location = new System.Drawing.Point(203, 165);
             this.labelNameTitle.Name = "labelNameTitle";
             this.labelNameTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelNameTitle.Size = new System.Drawing.Size(97, 20);
@@ -200,7 +201,7 @@
             // 
             this.pictureBoxProfile.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxProfile.Image = global::CarExhibition.Properties.Resources._149071;
-            this.pictureBoxProfile.Location = new System.Drawing.Point(177, 26);
+            this.pictureBoxProfile.Location = new System.Drawing.Point(183, 26);
             this.pictureBoxProfile.Name = "pictureBoxProfile";
             this.pictureBoxProfile.Size = new System.Drawing.Size(120, 116);
             this.pictureBoxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -212,8 +213,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(324, 332);
-            this.Controls.Add(this.pictureBoxExit);
+            this.ClientSize = new System.Drawing.Size(328, 348);
             this.Controls.Add(this.guna2ShadowPanelPasswordrecovery);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormProfile";

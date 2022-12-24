@@ -8,18 +8,19 @@ using BE;
 
 namespace BLL.BLLS
 {
-    public class BLL_SellCar
+    public class BLL_Request
     {
-        DAL.DALS.DAL_SellCar dal = new DAL.DALS.DAL_SellCar(); 
-        public void register(T_SellCar t)
+        DAL.DALS.DAL_Request dal = new DAL.DALS.DAL_Request();
+
+        public void register(T_Request t)
         {
             dal.register(t);
         }
-        public List<T_SellCar> ReadAll()
+        public List<T_Request> ReadAll()
         {
             return dal.ReadAll();
         }
-        public void Delete(T_SellCar t, int id)
+        public void Delete(T_Request t, int id)
         {
             dal.Delete(t, id);
         }

@@ -43,6 +43,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +55,8 @@
   <ItemGroup>
     <Compile Include="DALS\DAL-Login.cs" />
     <Compile Include="DALS\DAL-NewCarArrival.cs" />
+    <Compile Include="DALS\DAL-Request.cs" />
+    <Compile Include="DALS\DAL-SellCar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

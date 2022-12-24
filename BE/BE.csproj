@@ -75,6 +75,12 @@
     <Compile Include="T_NewCarArrival.cs">
       <DependentUpon>db.tt</DependentUpon>
     </Compile>
+    <Compile Include="T_Request.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_SellCar.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="db.edmx">

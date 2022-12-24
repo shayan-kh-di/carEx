@@ -12,23 +12,26 @@ namespace CarExhibition.Forms
 {
     public partial class FormProfile : Form
     {
-        [System.Runtime.InteropServices.DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]//To round the form
-        private static extern IntPtr CreateRoundRectRgn//To round the form
+        [System.Runtime.InteropServices.DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
+        private static extern IntPtr CreateRoundRectRgn
         (
-          int nLeftRect,//To round the form
-          int nTopRect,//To round the form
-          int nRightRect,//To round the form
-          int nBottomRect,//To round the form
-          int nWidthEllipse,//To round the form
-          int nHeightEllipse//To round the form
+          int nLeftRect,
+          int nTopRect,
+          int nRightRect,
+          int nBottomRect,
+          int nWidthEllipse,
+          int nHeightEllipse
         );
+
         public FormProfile()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.None;//To round the form
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 32, 32));//To round the form
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 32, 32));
         }
-        private void FormProfile_Load(object sender, EventArgs e)
+
+        private void FormProfile_Load(object sender, EventArgs e)//برای نمایش اطلاعات کاربری
         {
             labelNameAndFamily.Text = Properties.Settings.Default.RememberNameSetting;
             labelPhoneNumber.Text = Properties.Settings.Default.RememberPNSetting;
@@ -36,6 +39,7 @@ namespace CarExhibition.Forms
             labelUserName.Text = Properties.Settings.Default.RememberUNSetting;
             labelPassword.Text = Properties.Settings.Default.RememberPDSetting;
         }
+
         private void pictureBoxExit_Click(object sender, EventArgs e)
         {
             this.Close();

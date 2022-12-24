@@ -9,11 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BE;
 using BLL;
-using System.Globalization;
 
 namespace CarExhibition.Forms
 {
-    public partial class FormCarArrival : Form
+    public partial class FormSellCar : Form
     {
        [System.Runtime.InteropServices.DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
        private static extern IntPtr CreateRoundRectRgn
@@ -25,20 +24,41 @@ namespace CarExhibition.Forms
           int nWidthEllipse,
           int nHeightEllipse
         );
-        public FormCarArrival()
+        public FormSellCar()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 22, 22));
         }
+        BLL.BLLS.BLL_SellCar bll = new BLL.BLLS.BLL_SellCar();
+        T_SellCar t = new T_SellCar();
         public void formclose()
         {
             this.Close();
         }
-        BLL.BLLS.BLL_NewCarArrival BLL = new BLL.BLLS.BLL_NewCarArrival();
-        T_NewCarArrival t = new T_NewCarArrival();
-        private void guna2ButtonSaveTransction_Click(object sender, EventArgs e)
+        private void pictureBoxExit_Click(object sender, EventArgs e)
         {
+            formclose();
+        }
+        private void guna2ButtonCancel_Click(object sender, EventArgs e)
+        {
+            formclose();
+        }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            formclose();
+        }
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            formclose();
+        }
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            formclose();
+        }
+        private void guna2ButtonSaveTransction_Click_1(object sender, EventArgs e)
+        {
+            t.Type1 = guna2TextBoxType.Text;
             t.Accessories = guna2TextBoxAcccessories.Text;
             t.BodyNumber = guna2TextBoxBodyNumber.Text;
             t.Capacity = guna2NumericUpDownCapacity.Value.ToString();
@@ -52,60 +72,34 @@ namespace CarExhibition.Forms
             t.IdentificationCode = guna2TextBoxIdentification.Text;
             if (radioButtonHasInsurance.Checked == true) { t.Insurance = "دارد"; }
             else { t.Insurance = "ندارد"; }
-            t.MachineCode = guna2TextBoxMachineCode.Text;
             t.MachineConDition = guna2TextBoxMachineCondition.Text;
             t.Model = guna2NumericUpDownModel.Value.ToString();
-            t.TransactionDate = guna2TextBoxTransactionDate.Text;
-            t.Type = guna2TextBoxType.Text;
             t.User = guna2ComboBoxUser.Text;
             if (radioButtonHasViolation.Checked == true) { t.Violation = "دارد"; }
             else { t.Violation = "ندارد"; }
             t.NumberOfCylinders = guna2NumericUpDownNumberOfCylinders.Value.ToString();
-            t.PaymentSteps = guna2NumericUpDownPaymentSteps.Value.ToString();
-            t.PaymentType = guna2ComboBoxPaymentType.Text;
             t.PlaqueNumber = guna2TextBoxPlaqueNumber.Text;
-            t.Price = guna2TextBoxPrice.Text;
+            t.Price = guna2TextBoxGHeymat.Text;
             t.Style = guna2TextBoxStyla.Text;
             t.System = guna2ComboBoxSystem.Text;
             if (radioButtonHasTLApproval.Checked == true) { t.TLApproval = "دارد"; }
             else { t.TLApproval = "ندارد"; }
+            t.TransactionDate = guna2TextBoxTarikhPardakht.Text;
+            t.sellcodemeli = guna2TextBoxMeliKharidar.Text;
+            t.sellemail = guna2TextBoxEmailKharidar.Text;
+            t.sellmobile = guna2TextBoxTamasKharidar.Text;
+            t.sellname = guna2TextBoxNameKharidar.Text;
             t.NumberOfAxes = guna2NumericUpDownNumberOfAxes.Value.ToString();
-            t.pricemetn = guna2TextBoxpricematn.Text;
+            t.moshincode = guna2TextBoxMachineCode.Text;
             t.madarek = guna2TextBoxadarek.Text;
-            t.vin = guna2TextBoxvin.Text;
-            BLL.NewCarArrival(t);
-            MessageBox.Show("خودرو جدید با موفقیت ثبت شد", "پیغام", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            t.ppricematn = guna2TextBoxpricematn.Text;
+            t.pprice = guna2TextBoxPrice.Text;
+            t.ppricematn = guna2TextBoxpricematn.Text;
+            t.pricematn = guna2TextBoxpricem.Text;
+            t.vin = guna2TextBox1.Text;
+            bll.register(t);
+            MessageBox.Show("معامله خودرو با موفقیت انجام شد", "پیغام", MessageBoxButtons.OK, MessageBoxIcon.Information);
             formclose();
-        }
-        private void guna2ButtonCancel_Click(object sender, EventArgs e)
-        {
-            formclose();
-        }
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            formclose();
-        }
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            formclose();
-        }
-        private void pictureBoxExit_Click(object sender, EventArgs e)
-        {
-            formclose();
-        }
-        private void guna2TextBoxStyla_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((e.KeyChar >= 'a' && e.KeyChar <= 'z') || (e.KeyChar >= 'A' && e.KeyChar <= 'Z') || (e.KeyChar >= '0' && e.KeyChar <= '9'))
-                e.Handled = true;
-        }
-        private void guna2TextBoxMachineCondition_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((e.KeyChar >= 'a' && e.KeyChar <= 'z') || (e.KeyChar >= 'A' && e.KeyChar <= 'Z') || (e.KeyChar >= '0' && e.KeyChar <= '9'))
-                e.Handled = true;
-        }
-        private void guna2TextBoxIdentification_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.') { e.Handled = true; }
         }
         private void guna2TextBoxType_KeyDown(object sender, KeyEventArgs e)
         {
@@ -131,11 +125,11 @@ namespace CarExhibition.Forms
         {
             if (e.KeyCode == Keys.Enter) { guna2TextBoxCountry.Focus(); }
         }
-        private void guna2TextBoxStyla_KeyDown(object sender, KeyEventArgs e)
+        private void guna2TextBoxCountry_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) { guna2TextBoxStyla.Focus(); }
         }
-        private void guna2TextBoxCountry_KeyDown(object sender, KeyEventArgs e)
+        private void guna2TextBoxStyla_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) { guna2TextBoxColor.Focus(); }
         }
@@ -161,9 +155,9 @@ namespace CarExhibition.Forms
         }
         private void guna2TextBoxAcccessories_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter) { guna2TextBoxvin.Focus(); }
+            if (e.KeyCode == Keys.Enter) { guna2TextBox1.Focus(); }
         }
-        private void guna2TextBoxvin_KeyDown(object sender, KeyEventArgs e)
+        private void guna2TextBox1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) { guna2NumericUpDownCapacity.Focus(); }
         }
@@ -189,9 +183,9 @@ namespace CarExhibition.Forms
         }
         private void guna2TextBoxPrice_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter) { guna2TextBoxpricematn.Focus(); }
+            if (e.KeyCode == Keys.Enter) { guna2TextBoxadarek.Focus(); }
         }
-        private void guna2TextBoxpricematn_KeyDown(object sender, KeyEventArgs e)
+        private void guna2TextBoxadarek_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) { guna2ComboBoxPaymentType.Focus(); }
         }
@@ -201,13 +195,37 @@ namespace CarExhibition.Forms
         }
         private void guna2NumericUpDownPaymentSteps_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter) { guna2TextBoxadarek.Focus(); }
+            if (e.KeyCode == Keys.Enter) { guna2TextBoxpricematn.Focus(); }
         }
-        private void guna2TextBoxadarek_KeyDown(object sender, KeyEventArgs e)
+        private void guna2TextBoxNameKharidar_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter) { guna2TextBoxTransactionDate.Focus(); }
+            if (e.KeyCode == Keys.Enter) { guna2TextBoxMeliKharidar.Focus(); }
         }
-        private void guna2TextBoxTransactionDate_KeyDown(object sender, KeyEventArgs e)
+        private void guna2TextBoxMeliKharidar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) { guna2TextBoxTamasKharidar.Focus(); }
+        }
+        private void guna2TextBoxTamasKharidar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) { guna2TextBoxEmailKharidar.Focus(); }
+        }
+        private void guna2TextBoxEmailKharidar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) { guna2TextBoxGHeymat.Focus(); }
+        }
+        private void guna2TextBoxGHeymat_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) { guna2TextBoxpricem.Focus(); }
+        }
+        private void guna2TextBoxpricem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) { guna2ComboBoxTypePardakht.Focus(); }
+        }
+        private void guna2ComboBoxTypePardakht_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) { guna2TextBoxTarikhPardakht.Focus(); }
+        }
+        private void guna2TextBoxTarikhPardakht_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) { guna2ButtonSaveTransction.Focus(); }
         }

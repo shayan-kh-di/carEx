@@ -20,5 +20,14 @@ namespace DAL.DALS
         {
             return (db.T_NewCarArrival).ToList();
         }
+        public void Delete(T_NewCarArrival t , int id)
+        {
+            var q = db.T_NewCarArrival.Where(i => i.Id == id);
+            if (q.Count() == 1)
+            {
+                db.T_NewCarArrival.Remove(q.Single());
+                db.SaveChanges();
+            }
+        }
     }
 }

@@ -120,6 +120,7 @@
             this.guna2TextBoxPhoneNumberRecovery.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxPhoneNumberRecovery.TabIndex = 8;
             this.guna2TextBoxPhoneNumberRecovery.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBoxPhoneNumberRecovery_KeyDown);
+            this.guna2TextBoxPhoneNumberRecovery.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2TextBoxPhoneNumberRecovery_KeyPress);
             // 
             // guna2Button1
             // 
@@ -219,6 +220,7 @@
             this.guna2TextBoxEmailRicovery.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxEmailRicovery.TabIndex = 2;
             this.guna2TextBoxEmailRicovery.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBoxEmailRicovery_KeyDown);
+            this.guna2TextBoxEmailRicovery.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2TextBoxEmailRicovery_KeyPress);
             // 
             // guna2ShadowPanelRegister
             // 
@@ -234,7 +236,7 @@
             this.guna2ShadowPanelRegister.Controls.Add(this.guna2TextBoxPasswordRegister);
             this.guna2ShadowPanelRegister.Controls.Add(this.guna2TextBoxPhoneNumberRegister);
             this.guna2ShadowPanelRegister.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.guna2ShadowPanelRegister.Location = new System.Drawing.Point(196, 17);
+            this.guna2ShadowPanelRegister.Location = new System.Drawing.Point(196, 16);
             this.guna2ShadowPanelRegister.Name = "guna2ShadowPanelRegister";
             this.guna2ShadowPanelRegister.Radius = 10;
             this.guna2ShadowPanelRegister.ShadowColor = System.Drawing.Color.Black;
@@ -270,6 +272,7 @@
             this.guna2TextBoxUserNameRegister.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxUserNameRegister.TabIndex = 9;
             this.guna2TextBoxUserNameRegister.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBoxUserNameRegister_KeyDown);
+            this.guna2TextBoxUserNameRegister.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2TextBoxUserNameRegister_KeyPress);
             // 
             // guna2TextBoxEmailRegister
             // 
@@ -298,6 +301,7 @@
             this.guna2TextBoxEmailRegister.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxEmailRegister.TabIndex = 8;
             this.guna2TextBoxEmailRegister.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBoxEmailRegister_KeyDown);
+            this.guna2TextBoxEmailRegister.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2TextBoxEmailRegister_KeyPress);
             // 
             // guna2TextBoxNameAndFamilyRegister
             // 
@@ -326,6 +330,7 @@
             this.guna2TextBoxNameAndFamilyRegister.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxNameAndFamilyRegister.TabIndex = 7;
             this.guna2TextBoxNameAndFamilyRegister.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBoxNameAndFamilyRegister_KeyDown);
+            this.guna2TextBoxNameAndFamilyRegister.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2TextBoxNameAndFamilyRegister_KeyPress);
             // 
             // guna2ButtonClose3
             // 
@@ -371,7 +376,7 @@
             this.labelTitelRegister.AutoSize = true;
             this.labelTitelRegister.Font = new System.Drawing.Font("IRANSansWeb", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitelRegister.ForeColor = System.Drawing.Color.White;
-            this.labelTitelRegister.Location = new System.Drawing.Point(120, 36);
+            this.labelTitelRegister.Location = new System.Drawing.Point(121, 36);
             this.labelTitelRegister.Name = "labelTitelRegister";
             this.labelTitelRegister.Size = new System.Drawing.Size(111, 35);
             this.labelTitelRegister.TabIndex = 4;
@@ -404,6 +409,7 @@
             this.guna2TextBoxRepeatpasswordRegister.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxRepeatpasswordRegister.TabIndex = 2;
             this.guna2TextBoxRepeatpasswordRegister.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBoxRepeatpasswordRegister_KeyDown);
+            this.guna2TextBoxRepeatpasswordRegister.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2TextBoxRepeatpasswordRegister_KeyPress);
             // 
             // guna2TextBoxPasswordRegister
             // 
@@ -432,6 +438,7 @@
             this.guna2TextBoxPasswordRegister.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxPasswordRegister.TabIndex = 2;
             this.guna2TextBoxPasswordRegister.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBoxPasswordRegister_KeyDown);
+            this.guna2TextBoxPasswordRegister.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2TextBoxPasswordRegister_KeyPress);
             // 
             // guna2TextBoxPhoneNumberRegister
             // 
@@ -460,6 +467,7 @@
             this.guna2TextBoxPhoneNumberRegister.Size = new System.Drawing.Size(250, 36);
             this.guna2TextBoxPhoneNumberRegister.TabIndex = 2;
             this.guna2TextBoxPhoneNumberRegister.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBoxPhoneNumberRegister_KeyDown);
+            this.guna2TextBoxPhoneNumberRegister.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2TextBoxPhoneNumberRegister_KeyPress);
             // 
             // guna2ShadowPanelAvtivation
             // 
@@ -503,7 +511,7 @@
             this.linkLabelRequest.Font = new System.Drawing.Font("IRANSansWeb", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelRequest.ForeColor = System.Drawing.Color.White;
             this.linkLabelRequest.LinkColor = System.Drawing.Color.Aqua;
-            this.linkLabelRequest.Location = new System.Drawing.Point(56, 229);
+            this.linkLabelRequest.Location = new System.Drawing.Point(56, 228);
             this.linkLabelRequest.Name = "linkLabelRequest";
             this.linkLabelRequest.Size = new System.Drawing.Size(98, 18);
             this.linkLabelRequest.TabIndex = 7;
@@ -561,7 +569,7 @@
             this.labelTitileAvtivation.AutoSize = true;
             this.labelTitileAvtivation.Font = new System.Drawing.Font("IRANSansWeb", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitileAvtivation.ForeColor = System.Drawing.Color.White;
-            this.labelTitileAvtivation.Location = new System.Drawing.Point(119, 46);
+            this.labelTitileAvtivation.Location = new System.Drawing.Point(123, 46);
             this.labelTitileAvtivation.Name = "labelTitileAvtivation";
             this.labelTitileAvtivation.Size = new System.Drawing.Size(104, 35);
             this.labelTitileAvtivation.TabIndex = 4;
@@ -709,7 +717,7 @@
             this.labelTitileLogin.AutoSize = true;
             this.labelTitileLogin.Font = new System.Drawing.Font("IRANSansWeb", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitileLogin.ForeColor = System.Drawing.Color.White;
-            this.labelTitileLogin.Location = new System.Drawing.Point(119, 46);
+            this.labelTitileLogin.Location = new System.Drawing.Point(122, 46);
             this.labelTitileLogin.Name = "labelTitileLogin";
             this.labelTitileLogin.Size = new System.Drawing.Size(109, 35);
             this.labelTitileLogin.TabIndex = 4;
@@ -805,7 +813,7 @@
             this.linkLabelActivation.AutoSize = true;
             this.linkLabelActivation.Font = new System.Drawing.Font("IRANSansWeb", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelActivation.LinkColor = System.Drawing.Color.White;
-            this.linkLabelActivation.Location = new System.Drawing.Point(342, 455);
+            this.linkLabelActivation.Location = new System.Drawing.Point(343, 447);
             this.linkLabelActivation.Name = "linkLabelActivation";
             this.linkLabelActivation.Size = new System.Drawing.Size(60, 20);
             this.linkLabelActivation.TabIndex = 6;

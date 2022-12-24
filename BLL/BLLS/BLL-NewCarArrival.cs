@@ -20,5 +20,9 @@ namespace BLL.BLLS
         {
             return dal.ReadAll();
         }
+        public void Delete(T_NewCarArrival t , int id)
+        {
+            dal.Delete(t ,id);
+        }
     }
 }

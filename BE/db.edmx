@@ -21,6 +21,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MachineCode" Type="nvarchar" MaxLength="50" />
           <Property Name="Type" Type="nvarchar" MaxLength="60" />
           <Property Name="System" Type="nvarchar" MaxLength="50" />
           <Property Name="User" Type="nvarchar" MaxLength="50" />
@@ -30,6 +31,7 @@
           <Property Name="Fuel" Type="nvarchar" MaxLength="50" />
           <Property Name="Country" Type="nvarchar" MaxLength="50" />
           <Property Name="Capacity" Type="nvarchar" MaxLength="50" />
+          <Property Name="vin" Type="nvarchar" MaxLength="50" />
           <Property Name="engineNumber" Type="nvarchar" MaxLength="100" />
           <Property Name="PlaqueNumber" Type="nvarchar" MaxLength="100" />
           <Property Name="BodyNumber" Type="nvarchar" MaxLength="100" />
@@ -40,19 +42,82 @@
           <Property Name="Insurance" Type="nvarchar" MaxLength="50" />
           <Property Name="Violation" Type="nvarchar" MaxLength="50" />
           <Property Name="TLApproval" Type="nvarchar" MaxLength="50" />
-          <Property Name="MachineCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="madarek" Type="nvarchar" MaxLength="50" />
           <Property Name="CarOwner" Type="nvarchar" MaxLength="50" />
           <Property Name="IdentificationCode" Type="nvarchar" MaxLength="50" />
           <Property Name="FixedNumber" Type="nvarchar" MaxLength="50" />
           <Property Name="EmailOwner" Type="nvarchar" MaxLength="50" />
           <Property Name="Price" Type="nvarchar" MaxLength="50" />
+          <Property Name="pricemetn" Type="nvarchar" MaxLength="100" />
           <Property Name="PaymentType" Type="nvarchar" MaxLength="50" />
           <Property Name="PaymentSteps" Type="nvarchar" MaxLength="50" />
+          <Property Name="TransactionDate" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="T-Request">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="code" Type="nvarchar" MaxLength="50" />
+          <Property Name="type" Type="nvarchar" MaxLength="50" />
+          <Property Name="system" Type="nvarchar" MaxLength="50" />
+          <Property Name="user" Type="nvarchar" MaxLength="50" />
+          <Property Name="tip" Type="nvarchar" MaxLength="50" />
+          <Property Name="model" Type="nvarchar" MaxLength="50" />
+          <Property Name="color" Type="nvarchar" MaxLength="50" />
+          <Property Name="sookht" Type="nvarchar" MaxLength="50" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" />
+          <Property Name="codemeli" Type="nvarchar" MaxLength="50" />
+          <Property Name="tamas" Type="nvarchar" MaxLength="50" />
+          <Property Name="email" Type="nvarchar" MaxLength="50" />
+          <Property Name="adrees" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="T-SellCar">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="moshincode" Type="nvarchar" MaxLength="50" />
+          <Property Name="Type1" Type="nvarchar" MaxLength="60" />
+          <Property Name="System" Type="nvarchar" MaxLength="50" />
+          <Property Name="User" Type="nvarchar" MaxLength="50" />
+          <Property Name="Style" Type="nvarchar" MaxLength="50" />
+          <Property Name="Model" Type="nvarchar" MaxLength="50" />
+          <Property Name="Color" Type="nvarchar" MaxLength="50" />
+          <Property Name="Fuel" Type="nvarchar" MaxLength="50" />
+          <Property Name="Country" Type="nvarchar" MaxLength="50" />
+          <Property Name="Capacity" Type="nvarchar" MaxLength="50" />
+          <Property Name="vin" Type="nvarchar" MaxLength="50" />
+          <Property Name="engineNumber" Type="nvarchar" MaxLength="100" />
+          <Property Name="PlaqueNumber" Type="nvarchar" MaxLength="100" />
+          <Property Name="BodyNumber" Type="nvarchar" MaxLength="100" />
+          <Property Name="NumberOfCylinders" Type="nvarchar" MaxLength="50" />
+          <Property Name="NumberOfAxes" Type="nvarchar" MaxLength="50" />
+          <Property Name="Accessories" Type="nvarchar" MaxLength="150" />
+          <Property Name="MachineConDition" Type="nvarchar" MaxLength="150" />
+          <Property Name="Insurance" Type="nvarchar" MaxLength="50" />
+          <Property Name="Violation" Type="nvarchar" MaxLength="50" />
+          <Property Name="TLApproval" Type="nvarchar" MaxLength="50" />
+          <Property Name="madarek" Type="nvarchar" MaxLength="50" />
+          <Property Name="pprice" Type="nvarchar" MaxLength="50" />
+          <Property Name="ppricematn" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmailOwner" Type="nvarchar" MaxLength="50" />
+          <Property Name="CarOwner" Type="nvarchar" MaxLength="50" />
+          <Property Name="IdentificationCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="FixedNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="sellname" Type="nvarchar" MaxLength="50" />
+          <Property Name="sellemail" Type="nvarchar" MaxLength="50" />
+          <Property Name="sellmobile" Type="nvarchar" MaxLength="50" />
+          <Property Name="sellcodemeli" Type="nvarchar" MaxLength="50" />
+          <Property Name="Price" Type="nvarchar" MaxLength="50" />
+          <Property Name="pricematn" Type="nvarchar" MaxLength="50" />
           <Property Name="TransactionDate" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityContainer Name="ModelStoreContainer">
           <EntitySet Name="T-Login" EntityType="Self.T-Login" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="T-NewCarArrival" EntityType="Self.T-NewCarArrival" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="T-Request" EntityType="Self.T-Request" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="T-SellCar" EntityType="Self.T-SellCar" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -72,12 +137,15 @@
         <EntityContainer Name="CarExhibitionEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="T_Login" EntityType="Self.T_Login" />
           <EntitySet Name="T_NewCarArrival" EntityType="Model.T_NewCarArrival" />
+          <EntitySet Name="T_SellCar" EntityType="Model.T_SellCar" />
+          <EntitySet Name="T_Request" EntityType="Model.T_Request" />
         </EntityContainer>
         <EntityType Name="T_NewCarArrival">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MachineCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Type" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
           <Property Name="System" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="User" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -87,6 +155,7 @@
           <Property Name="Fuel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Capacity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="vin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="engineNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="PlaqueNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="BodyNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
@@ -97,15 +166,76 @@
           <Property Name="Insurance" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Violation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="TLApproval" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="MachineCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="madarek" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CarOwner" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IdentificationCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="FixedNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="EmailOwner" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Price" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="pricemetn" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="PaymentType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="PaymentSteps" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="TransactionDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="T_SellCar">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="moshincode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Type1" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="System" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="User" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Style" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Color" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Fuel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Capacity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="vin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="engineNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PlaqueNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="BodyNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="NumberOfCylinders" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NumberOfAxes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Accessories" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="MachineConDition" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Insurance" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Violation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TLApproval" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="madarek" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="pprice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ppricematn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmailOwner" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CarOwner" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IdentificationCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FixedNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sellname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sellemail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sellmobile" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sellcodemeli" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Price" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="pricematn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TransactionDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="T_Request">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="system" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="user" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="tip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="color" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sookht" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="codemeli" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="tamas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="adrees" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -131,12 +261,13 @@
                 <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
                 <ScalarProperty Name="PaymentSteps" ColumnName="PaymentSteps" />
                 <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+                <ScalarProperty Name="pricemetn" ColumnName="pricemetn" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
                 <ScalarProperty Name="EmailOwner" ColumnName="EmailOwner" />
                 <ScalarProperty Name="FixedNumber" ColumnName="FixedNumber" />
                 <ScalarProperty Name="IdentificationCode" ColumnName="IdentificationCode" />
                 <ScalarProperty Name="CarOwner" ColumnName="CarOwner" />
-                <ScalarProperty Name="MachineCode" ColumnName="MachineCode" />
+                <ScalarProperty Name="madarek" ColumnName="madarek" />
                 <ScalarProperty Name="TLApproval" ColumnName="TLApproval" />
                 <ScalarProperty Name="Violation" ColumnName="Violation" />
                 <ScalarProperty Name="Insurance" ColumnName="Insurance" />
@@ -147,6 +278,7 @@
                 <ScalarProperty Name="BodyNumber" ColumnName="BodyNumber" />
                 <ScalarProperty Name="PlaqueNumber" ColumnName="PlaqueNumber" />
                 <ScalarProperty Name="engineNumber" ColumnName="engineNumber" />
+                <ScalarProperty Name="vin" ColumnName="vin" />
                 <ScalarProperty Name="Capacity" ColumnName="Capacity" />
                 <ScalarProperty Name="Country" ColumnName="Country" />
                 <ScalarProperty Name="Fuel" ColumnName="Fuel" />
@@ -156,7 +288,70 @@
                 <ScalarProperty Name="User" ColumnName="User" />
                 <ScalarProperty Name="System" ColumnName="System" />
                 <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="MachineCode" ColumnName="MachineCode" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_SellCar">
+            <EntityTypeMapping TypeName="Model.T_SellCar">
+              <MappingFragment StoreEntitySet="T-SellCar">
+                <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+                <ScalarProperty Name="pricematn" ColumnName="pricematn" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="sellcodemeli" ColumnName="sellcodemeli" />
+                <ScalarProperty Name="sellmobile" ColumnName="sellmobile" />
+                <ScalarProperty Name="sellemail" ColumnName="sellemail" />
+                <ScalarProperty Name="sellname" ColumnName="sellname" />
+                <ScalarProperty Name="FixedNumber" ColumnName="FixedNumber" />
+                <ScalarProperty Name="IdentificationCode" ColumnName="IdentificationCode" />
+                <ScalarProperty Name="CarOwner" ColumnName="CarOwner" />
+                <ScalarProperty Name="EmailOwner" ColumnName="EmailOwner" />
+                <ScalarProperty Name="ppricematn" ColumnName="ppricematn" />
+                <ScalarProperty Name="pprice" ColumnName="pprice" />
+                <ScalarProperty Name="madarek" ColumnName="madarek" />
+                <ScalarProperty Name="TLApproval" ColumnName="TLApproval" />
+                <ScalarProperty Name="Violation" ColumnName="Violation" />
+                <ScalarProperty Name="Insurance" ColumnName="Insurance" />
+                <ScalarProperty Name="MachineConDition" ColumnName="MachineConDition" />
+                <ScalarProperty Name="Accessories" ColumnName="Accessories" />
+                <ScalarProperty Name="NumberOfAxes" ColumnName="NumberOfAxes" />
+                <ScalarProperty Name="NumberOfCylinders" ColumnName="NumberOfCylinders" />
+                <ScalarProperty Name="BodyNumber" ColumnName="BodyNumber" />
+                <ScalarProperty Name="PlaqueNumber" ColumnName="PlaqueNumber" />
+                <ScalarProperty Name="engineNumber" ColumnName="engineNumber" />
+                <ScalarProperty Name="vin" ColumnName="vin" />
+                <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Fuel" ColumnName="Fuel" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="Style" ColumnName="Style" />
+                <ScalarProperty Name="User" ColumnName="User" />
+                <ScalarProperty Name="System" ColumnName="System" />
+                <ScalarProperty Name="Type1" ColumnName="Type1" />
+                <ScalarProperty Name="moshincode" ColumnName="moshincode" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_Request">
+            <EntityTypeMapping TypeName="Model.T_Request">
+              <MappingFragment StoreEntitySet="T-Request">
+                <ScalarProperty Name="adrees" ColumnName="adrees" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="tamas" ColumnName="tamas" />
+                <ScalarProperty Name="codemeli" ColumnName="codemeli" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="sookht" ColumnName="sookht" />
+                <ScalarProperty Name="color" ColumnName="color" />
+                <ScalarProperty Name="model" ColumnName="model" />
+                <ScalarProperty Name="tip" ColumnName="tip" />
+                <ScalarProperty Name="user" ColumnName="user" />
+                <ScalarProperty Name="system" ColumnName="system" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="code" ColumnName="code" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

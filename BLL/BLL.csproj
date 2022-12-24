@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="BLLS\BLL-Login.cs" />
     <Compile Include="BLLS\BLL-NewCarArrival.cs" />
+    <Compile Include="BLLS\BLL-Request.cs" />
+    <Compile Include="BLLS\BLL-SellCar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

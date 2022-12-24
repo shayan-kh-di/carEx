@@ -83,6 +83,16 @@ namespace CarExhibition.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1453023635_form_icon___1_ {
+            get {
+                object obj = ResourceManager.GetObject("1453023635_form.icon_ (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _149071 {
             get {
                 object obj = ResourceManager.GetObject("149071", resourceCulture);
@@ -146,6 +156,16 @@ namespace CarExhibition.Properties {
         internal static System.Drawing.Bitmap _9 {
             get {
                 object obj = ResourceManager.GetObject("9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Full_Recycle_Bin {
+            get {
+                object obj = ResourceManager.GetObject("Full_Recycle_Bin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
